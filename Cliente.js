@@ -7,8 +7,12 @@ export class Cliente{//criando uma classe = molde
         return this._cpf;
     }
 
-    constructor(nome, cpf){//com o constructor eu consigo atribuir valores para os atributos em tempo de construção, depois eu não consigo mais atribuir 
+    constructor(nome, cpf,senha){//com o constructor eu consigo atribuir valores para os atributos em tempo de construção, depois eu não consigo mais atribuir 
         this.nome = nome;
         this._cpf = cpf
+        this._senha = senha;
+    }
+    autenticar(){
+        return true
     }
 }
